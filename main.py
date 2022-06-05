@@ -3,6 +3,7 @@ from my_function import update_app
 
 print("Enter any choice: ")
 print("1. List all directories.")
+
 option = int(input())
 if(option == 1):
     first()
