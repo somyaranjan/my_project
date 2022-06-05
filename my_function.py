@@ -1,2 +1,9 @@
+import os
+
+from click import command
 def first():
-    print("you entered the value 1..")
+    if os.name == 'nt':
+        command = "dir"
+    else:
+        command = "ls -l"
+    os.system(command)
