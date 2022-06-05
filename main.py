@@ -1,12 +1,12 @@
-from secrets import choice
-
-
-from my_function import first
+from my_function import list_dir
+from my_function import update_app
 
 print("Enter any choice: ")
 print("1. List all directories.")
-choice = int(input())
-if(choice == 1):
+option = int(input())
+if(option == 1):
     first()
+elif(option == 2):
+    update_app()
 else:
-    print("other")
+    print("invalid entry")
